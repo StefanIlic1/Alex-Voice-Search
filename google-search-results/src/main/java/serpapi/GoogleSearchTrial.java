@@ -1,10 +1,16 @@
+package serpapi;
+// import the google search that is in the same package
 import serpapi.GoogleSearch;
 import serpapi.SerpApiSearch;
 import serpapi.SerpApiSearchException;
 
+import java.io.Console;
+import java.util.HashMap;
+import java.util.Map;
+
 public class GoogleSearchTrial {
     public static void main (String[] args) {
-        Map<String, String> parameter = new HashMap<>();
+         Map<String, String> parameter = new HashMap<>();
 
         parameter.put("q", "Coffee");
         parameter.put("location", "Naperville, Illinois, United States");
