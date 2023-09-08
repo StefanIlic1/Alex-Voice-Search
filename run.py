@@ -10,7 +10,7 @@ engine.say("My name is ahl'yx... what you want")
 engine.runAndWait()
 
 for phrase in LiveSpeech():
-    if phrase == "alex":
+    if "alex" in phrase:
         engine.say("what")
         engine.runAndWait()
 
