@@ -6,7 +6,7 @@ import json
 engine = pyttsx3.init()
 engine.setProperty('rate', 140) 
 
-engine.say("My name is ahl'yx... what you want")
+engine.say("My name is ahl'yx... what you want bruv")
 engine.runAndWait()
 
 for phrase in LiveSpeech():
