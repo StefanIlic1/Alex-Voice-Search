@@ -1,7 +1,6 @@
 from pocketsphinx import LiveSpeech
 from serpapi import GoogleSearch
 import pyttsx3
-import json
 
 engine = pyttsx3.init()
 engine.setProperty('rate', 140) 
