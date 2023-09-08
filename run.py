@@ -13,10 +13,10 @@ for phrase in LiveSpeech():
           engine.say("what")
           engine.runAndWait()
         
-          phrase2 = LiveSpeech()
+          phrase2 = str(LiveSpeech())
         
           params = {
-          "q": str(phrase2),
+          "q": phrase2,
           "location": "Naperville, Illinois, United States",
           "hl": "en",
           "gl": "us",
@@ -42,8 +42,8 @@ for phrase in LiveSpeech():
                 engine.say(answer_box["result"])
                 engine.runAndWait()
             else:
-                engine.say("what? did you say", phrase2 + "?")
+                engine.say("what? did you say " + phrase2 + "?")
                 engine.runAndWait()
           else:
-              engine.say("what? did you say", phrase2 + "?")
+              engine.say("what? did you say " + phrase2 + "?")
               engine.runAndWait()
