@@ -21,7 +21,7 @@ for phrase in LiveSpeech():
           "hl": "en",
           "gl": "us",
           "google_domain": "google.com",
-          "api_key": "2035296457b5d92d8f577ee0cc9839423d51404936d3fa7b12223dfc0cf8581d"
+          "api_key": "ba454bedfca46b45cd053e801dec4a2255aab18acbd1b27f2b7e28314794e353"
           }
     
           search = GoogleSearch(params)
