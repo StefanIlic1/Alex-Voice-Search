@@ -5,7 +5,7 @@ import pyttsx3
 engine = pyttsx3.init()
 engine.setProperty('rate', 140) 
 
-engine.say("My name is ahl'yx... what you want bruv")
+engine.say("My name is ahl'yx... what do you want")
 engine.runAndWait()
 
 for phrase in LiveSpeech():
