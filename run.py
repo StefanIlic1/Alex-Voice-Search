@@ -2,11 +2,7 @@ from pocketsphinx import LiveSpeech
 from serpapi import GoogleSearch
 import pyttsx3
 import os
-try:
-    from dotenv import load_dotenv
-except ImportError:
-    def load_dotenv(*args, **kwargs):
-        return False
+import dotenv
 
 load_dotenv()
 
@@ -15,12 +11,12 @@ API_KEY = os.getenv("API_KEY")
 engine = pyttsx3.init()
 engine.setProperty('rate', 140) 
 
-engine.say("My name is ahl'yx... what do you want")
+engine.say("My name is alex... what do you want")
 engine.runAndWait()
 
 for phrase in LiveSpeech():
     if "alex" in str(phrase):
-          engine.say("what")
+          engine.say("what's up?")
           engine.runAndWait()
         
           phrase2 = str(LiveSpeech())
