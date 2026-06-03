@@ -1,6 +1,16 @@
 from pocketsphinx import LiveSpeech
 from serpapi import GoogleSearch
 import pyttsx3
+import os
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    def load_dotenv(*args, **kwargs):
+        return False
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 engine = pyttsx3.init()
 engine.setProperty('rate', 140) 
@@ -21,7 +31,7 @@ for phrase in LiveSpeech():
           "hl": "en",
           "gl": "us",
           "google_domain": "google.com",
-          "api_key": "ba454bedfca46b45cd053e801dec4a2255aab18acbd1b27f2b7e28314794e353"
+          "api_key": API_KEY
           }
     
           search = GoogleSearch(params)
